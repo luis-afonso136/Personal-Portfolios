@@ -1,0 +1,81 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #fffbfb;
+    padding: 1rem;
+}
+
+.navbar .nav-container {
+    display: flex;
+    border: 2px solid #5e3bee;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: auto;
+    /* Ajuste a margem aqui */
+    background-color:#5e3bee;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background-color: darkviolet;
+}
+
+
+
+.main {
+    background-color: #ffffff;
+    padding: 90px 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.main .left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.main .left h3 {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 46px;
+}
+
+.main .left h3 span {
+    color: #5e3bee;
+}
+
+.main .left p {
+    color: #1c1e53;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.main .left button {
+    margin-top: 40px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #5e3bee;
+    padding: 14px 24px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
