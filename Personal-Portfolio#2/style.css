@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#menu {
+    color: #45f50f;
+    background-color: #deebee;
+    font-weight: bold;
+    height: 100px;
+    box-shadow: 0 5px 15px rgba(178, 178, 178, 0.35);
+}
+
+nav #navbarSupportedContent button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #45f50f;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    font-size: 2rem;
+}
+
+nav #navbarSupportedContent button:hover {
+    color: #45f50f;
+    background-color: #fff;
+}
+
+.main {
+    background-color: #ffffff;
+    padding: 90px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.main .about {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.main .about h3 {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 46px;
+}
+
+.main .about h3 span {
+    color: #45f50f;
+}
+
+.main .about p {
+    color: #1c1e53;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.main img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.projects {
+    padding: 30px;
+    background-color: #deebee;
+    box-shadow: 0 5px 15px rgba(178, 178, 178, 0.35);
+}
+
+.projects .container h3 {
+    font-weight: bold;
+    color: #45f50f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.projects .card {
+    border-radius: 50px;
+    border: 1px solid transparent;
+    background-color: #deebee;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 15px rgba(178, 178, 178, 0.35);
+}
+
+.projects .card h3 {
+    color: #45f50f;
+    font-size: bold;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.projects .card .text {
+    margin-top: 15px;
+}
+
+.projects .card p {
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.projects .card img {
+    border-radius: 50px;
+}
+
+.projects .card:hover {
+    border-color: #45f50f;
+    box-shadow: none;
+}
+
+.features {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features .card {
+    border-radius: 30px;
+    border: 1px solid transparent;
+    background-color: #deebee;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 15px rgba(178, 178, 178, 0.35);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.features .text {
+    margin-top: 40px;
+}
+
+.features .text h2 {
+    color: #45f50f;
+    font-weight: bold;
+}
+
+.features .card button {
+    width: 60px;
+    height: 60px;
+    border-radius: 20%;
+    background-color: #deebee;
+    color: #000000;
+    margin-top: 25px;
+    margin-left: 25px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    font-size: 2rem;
+    box-shadow: 0 5px 15px rgba(178, 178, 178, 0.35);
+}
+
+.features .card button i {
+    color: #1c1e53;
+    align-items: center;
+    justify-content: center;
+}
+
+.features .card button:hover {
+    border-color: #fff;
+    box-shadow: none;
+}
+
+footer {
+    background-color: #deebee;
+}
+
+.scroll-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #45f50f;
+    color: #fff;
+    border: 1px solid transparent;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.scroll-top i {
+    font-size: 45px;
+}
+
+.scroll-top:hover {
+    border-color: #fff;
+    box-shadow: none;
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main .about {
+        align-items: center;
+    }
+
+    .projects .card,
+    .features .card {
+        width: 100%;
+    }
+
+    .projects .card img,
+    .features .card img {
+        width: 100%;
+    }
+
+    .projects .card h3,
+    .features .card h3 {
+        text-align: center;
+    }
+}
+
+
+p{
+    color: #1c1e53;
+}
